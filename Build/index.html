@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>zenworm — Jason O'Brien — Nashville, TN</title>
+
+	<link rel="stylesheet" media="screen, projection" href="assets/css/styles.css" />
+
+  <script type="text/javascript" src="//use.typekit.net/pjx8wiw.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+</head>
+
+<body>
+
+  <header role="banner">
+    <a href="mailto:jason@zenworm.org">
+      <h1>zenworm</h1>
+    </a>
+  </header>
+
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>

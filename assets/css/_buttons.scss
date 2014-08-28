@@ -1,0 +1,52 @@
+// Base button
+.button {
+  position:relative;
+  display:block;
+  border-radius:4px;
+  padding:0.5em 1.25em;
+  border:none;
+  background:#ddd;
+  color:rgba(0,0,0,.4);
+  font-weight:bold;
+  text-decoration:none;
+  cursor: pointer;
+  @include transition(.1s ease-out all);
+
+  // Hover state
+  &:hover {
+    background:shade(#ddd, 5%);
+  }
+
+  // Active class state
+  &.active {
+    background:silver; color:#666;
+
+    &:hover {
+      background:darken(silver,5%);
+    }
+  }
+}
+
+// Primary button
+.button-primary {
+  @extend .button;
+  display:inline-block;
+  margin:0 auto;
+  background:$color-primary;
+  color:white;
+
+  &:hover {
+    background:shade($color-primary,5%);
+  }
+}
+
+.button-secondary {
+  @extend .button;
+  background:transparent;
+  border:0.175em solid #ccc;
+}
+
+.button-close {
+  display:inline-block;
+  float:right;
+}
