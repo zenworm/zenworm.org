@@ -357,7 +357,7 @@ body {
   color: #f2f2f2;
   background: #121212;
   line-height: 1.5;
-  font-family: "merriweather-1", "merriweather-2", serif;
+  font-family: "skolar-1", "skolar-2", serif;
   overflow: hidden;
   overflow-x: hidden; }
   body:after {
@@ -424,15 +424,12 @@ header {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
+  header svg {
+    width: 4em;
+    height: 4em;
+    margin: 0 auto; }
   header h1 {
+    margin-top: 0;
     font-size: 1em; }
-    header h1:before {
-      content: "";
-      display: block;
-      width: 4em;
-      height: 4em;
-      margin: 0 auto 1em;
-      background: url(../images/zenworm.svg) center center no-repeat;
-      background-size: contain; }
   header a {
     color: #f2f2f2; }
