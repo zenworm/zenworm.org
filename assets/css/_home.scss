@@ -6,9 +6,70 @@ header {
   @include transform(translateY(-50%));
 
   svg {
-    width:4em;
-    height:4em;
+    width:5em;
+    height:5em;
     margin:0 auto;
+  }
+
+  // Dynamic colors on worm
+  [data-worm-number="worm-1"] {
+    .inside {
+      fill:#70f188;
+    }
+
+    .outside {
+      fill:#1e7c2f;
+    }
+  }
+
+  [data-worm-number="worm-2"] {
+    .inside {
+      fill:#ed4444;
+    }
+
+    .outside {
+      fill:#841010;
+    }
+  }
+
+  [data-worm-number="worm-3"] {
+    .inside {
+      fill:#edd344;
+    }
+
+    .outside {
+      fill:#735a0e;
+    }
+  }
+
+  [data-worm-number="worm-4"] {
+    .inside {
+      fill:#2bc0b0;
+    }
+
+    .outside {
+      fill:#0e7368;
+    }
+  }
+
+  [data-worm-number="worm-5"] {
+    .inside {
+      fill:#ccc;
+    }
+
+    .outside {
+      fill:#666;
+    }
+  }
+
+  [data-worm-number="worm-6"] {
+    .inside {
+      fill:#b64bde;
+    }
+
+    .outside {
+      fill:#611f79;
+    }
   }
 
   h1 {
